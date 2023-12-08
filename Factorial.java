@@ -37,6 +37,8 @@ public class Factorial {
         System.out.println(a.calcFactorial(b));
         }
         System.out.printf("e is %2.3f \n", a.calcE());
-        System.out.printf("e is %2.3f \n", a.calcEX(2));
+        for(int b=1; b<=5; b++){
+        System.out.printf("e is %2.3f \n", a.calcEX(b));
+        }
     }
 }
