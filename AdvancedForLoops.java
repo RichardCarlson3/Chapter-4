@@ -44,9 +44,17 @@ public class AdvancedForLoops {
         }
     }
     public void upSideDown(int x, int y){
-        int z=x-y;
-        for(int a=1; a<=z; a++){
-            
+        for(int a=x; a>=y; a--){
+            for(int b=a; b<x; b++){
+                System.out.print(" ");
+            }
+            for(int b=a; b>=y; b--){
+                System.out.print(b);
+            }
+            for(int b=y+1; b<=a; b++){
+                System.out.print(b);
+            }
+            System.out.println();
         }
     }
     public static void main(String [] args){
@@ -63,5 +71,8 @@ public class AdvancedForLoops {
         a.isosceles(5);
         System.out.println();
         System.out.println("upSideDown");
+        a.upSideDown(9,5);
+        System.out.println();
+        a.upSideDown(8,6);
     }
 }
